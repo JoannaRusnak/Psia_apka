@@ -1,4 +1,4 @@
-@import url(/css/reset.css);
+@import url('./reset.css');
 
 :root {
     --white: #ffffff;
@@ -10,7 +10,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-image: url(/images/background_map.jpg);background-size: cover;
+    background-image: url('../images/background_map.jpg');background-size: cover;
 }
 
 h4 {
