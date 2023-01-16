@@ -1,0 +1,116 @@
+@import url(/css/reset.css);
+
+:root {
+    --white: #ffffff;
+    --darkgray: #a9a9a9;
+    --lightgray: #e5ebeb;
+    --green: #32c11ed0;
+    --lightgreen: #bfecac;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url(/images/background_map.jpg);background-size: cover;
+}
+
+h4 {
+    color: var(--darkgray);
+    font-weight: 500;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 50px;
+}
+
+.panel {
+    display: block;
+    margin: 180px auto;
+    height: 600px;
+    width: 390px;
+    background: var(--white);
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.dog-icon {
+    align-items: center;
+    height: 175px;
+    width: 200px;
+}
+
+.login-detail {
+    display: block;
+    margin-left: 65px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 2px;
+    text-align: left;
+    color: var(--darkgray);
+}
+
+.form-box {
+    background-color: var(--lightgray);
+    border-radius: 10px;
+    border: none;
+    height: 33px;
+    width: 266px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.form-box:hover,
+.form-box:focus {
+    border: 1px solid var(--green);
+    background-color: var(--lightgreen);
+    transition: color 250ms;
+  	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*
+.login-icon {
+    fill: rgb(166, 160, 160);
+    height: 12px;
+    width: 12px;
+    top: 450px;
+    position: absolute;
+}
+*/
+
+.submit-button {
+    height: 33px;
+    width: 266px;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    border: none;
+    margin-top: 35px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.submit-button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+	transition: color 250ms, background 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 326px) {
+    div {
+    width: 326px;
+    height: 696px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    body {
+        max-height: 720px;
+    }
+  
+    container {
+    margin-top: 140px auto;
+  }
+}
